@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	
+	<script type="text/javascript" src="js/cdraw.js"></script>
+	<script type="text/javascript" src="js/variables.js"></script>
+	<script type="text/javascript" src="js/Data.js"></script>
+	
+	<style type="text/css">
+		#Titlebox{width:680px;height:80px;background-color:#cccccc;margin-right:auto;margin-left:auto}
+			#title{text-align:center;font-size:48px;}
+			#names{text-align:center;font-size:16px;}
+		#Main{width:680px;height:520px;background-color:#aaaaaa;margin-right:auto;margin-left:auto;}
+			#Coords{position:fixed;width:640px;height:480px;margin:20px;background-color:#777777;}
+	</style>
+	
+</head>
+<body>
+	<div id="Titlebox">
+		<div id="title">Point and Positioning Display</div>
+		<div id="names">By Aaron Williams and Mark Tentindo</div>
+	</div>
+	<div id="Main">
+		<div id="Coords" onmousemove="getCoords(event)" onmouseout="clearCoords()">
+			<canvas id="Canvas" width="640px" height="480px"></canvas>
+		</div>
+	</div>
+
+</body>	
+	<script type="text/javascript">
+		Initial();
+	</script>
+</html>
